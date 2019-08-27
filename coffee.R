@@ -102,6 +102,21 @@ n_coffee <- c(3, 9, 20)
 hometown <- c("London", "Cumbria", "Kent")
 coffee_df <- data.frame(person_name, n_coffee, hometown)
 
+person_name = c("lauren",
+                "Harriet",
+                "Tony",
+                "James",
+                "Monika")
+n_coffee  = c(5,
+              0,
+              6,
+              5,
+              5)
+hometown = c("Twickenham",
+             "London",
+             "Bristol",
+             "Walsall",
+             "Nysa")
 #add in data 
 person_name  = c("sam", "fazila","george", "david", "josh")
 n_coffee = c(9, 0,15,10, 20)
