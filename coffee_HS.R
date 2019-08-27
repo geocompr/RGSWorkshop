@@ -6,13 +6,11 @@ x = 1:3
 y = x^2
 
 # plot objects
-plot(x, y)
+person_name  = c("Humphrey", "James", "Harvinder", "Tom")
+n_coffee =  c(9, 7, 0, 5)
+home_town = c("Worcester",  "Cheltenham", "Hayes", "Luton")
 
-person_name = c("dani", "alistair", "robin")
-n_coffee = c(10, 15, 6)
-hometown = c("zaragoza", "edinburgh", "hereford")
-
-likes_tea = c(TRUE, FALSE, FALSE)
+likes_tea = c(TRUE, FALSE, FALSE, TRUE)
 
 class(person_name)
 class(n_coffee)
@@ -54,9 +52,3 @@ coffee=c(2,3,5,2,0)
 town=c("High Wickham","Budapest","Bristol","Chester","Buffalo")
 new_coffee=data.frame(name,coffee,town)
 new_coffee
-
-#add more data
-person_name <- c("Elle", "Nick", "Dan")
-n_coffee <- c(3, 9, 20)
-hometown <- c("London", "Cumbria", "Kent")
-coffee_df <- data.frame(person_name, n_coffee, hometown, likes_tea)
