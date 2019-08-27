@@ -22,34 +22,11 @@ person_name[1:2]
 person_name[likes_tea]
 person_name[n_coffee >= 10]
 
-coffee_df = tibble::tibble(
+coffee_df1 = tibble::tibble(
   person_name,
   n_coffee,
   hometown
 )
-
-
-
-coordinates = tmaptools::geocode_OSM(coffee_df$hometown)
-
-coffee_df = tibble::tibble(
-  person_name,
-  n_coffee,
-  hometown,
-  lon = coordinates$lon,
-  lat = coordinates$lat
-)
-
-library(sf)
-coords = c("lon", "lat")
-coffee_sf = st_as_sf(coffee_df, coords = coords)
-
-library(tmap)
-tmap_mode("view")
-tm_shape(coffee_sf) + tm_dots()
-
-write.csv(coffee_df, "coffee.csv")
-
 
 #---------------------table by the window----------------
 # recreation example
@@ -60,17 +37,17 @@ n_coffee <- c(7, 3, 10, 14)
 
 hometown <- c("doncaster", "harlech", "pretoria", "mexico_city")
 
+
 coffee_df_tbtw <- data.frame(person_name,
-              n_coffee,
-              hometown
-              )
+                             n_coffee,
+                             hometown)
 #---------------------------------------------------------
 
 #added data from back table
 name=c("Izzie","Greg", "Katherine", "Jeremy", "Kara")
 coffee=c(2,3,5,2,0)
 town=c("High Wickham","Budapest","Bristol","Chester","Buffalo")
-new_coffee=data.frame(name,coffee,town)
+new_coffee = data.frame(name,coffee,town)
 new_coffee
 
 #SANDRA_PAUL_MAGD
@@ -100,7 +77,7 @@ coffee_table_df = data.frame(
 person_name <- c("Elle", "Nick", "Dan")
 n_coffee <- c(3, 9, 20)
 hometown <- c("London", "Cumbria", "Kent")
-coffee_df <- data.frame(person_name, n_coffee, hometown)
+coffee_df2 <- data.frame(person_name, n_coffee, hometown)
 
 person_name = c("lauren",
                 "Harriet",
@@ -117,6 +94,9 @@ hometown = c("Twickenham",
              "Bristol",
              "Walsall",
              "Nysa")
+
+coffee_df3 = data.frame(person_name, n_coffee, hometown)
+
 #add in data 
 person_name  = c("sam", "fazila","george", "david", "josh")
 n_coffee = c(9, 0,15,10, 20)
@@ -134,4 +114,36 @@ geotable = data.frame(
 
 person_name  = c("Humphrey", "James", "Harvinder", "Tom")
 n_coffee =  c(9, 7, 0, 5)
-home_town = c("Worcester",  "Cheltenham", "Hayes", "Luton")
+hometown = c("Worcester",  "Cheltenham", "Hayes", "Luton")
+
+coffee_df4 = data.frame(person_name, n_coffee, hometown)
+
+coffee_all = rbind(
+  coffee_df1,
+  coffee_df2,
+  coffee_df3,
+  coffee_df4,
+  coffee_df_tbtw,
+  geotable,
+  coffee_table_df
+)
+
+coordinates = tmaptools::geocode_OSM(coffee_df$hometown)
+
+coffee_df = tibble::tibble(
+  person_name,
+  n_coffee,
+  hometown,
+  lon = coordinates$lon,
+  lat = coordinates$lat
+)
+
+library(sf)
+coords = c("lon", "lat")
+coffee_sf = st_as_sf(coffee_df, coords = coords)
+
+library(tmap)
+tmap_mode("view")
+tm_shape(coffee_sf) + tm_dots()
+
+write.csv(coffee_df, "coffee.csv")
