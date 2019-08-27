@@ -101,3 +101,18 @@ person_name <- c("Elle", "Nick", "Dan")
 n_coffee <- c(3, 9, 20)
 hometown <- c("London", "Cumbria", "Kent")
 coffee_df <- data.frame(person_name, n_coffee, hometown)
+
+#add in data 
+person_name  = c("sam", "fazila","george", "david", "josh")
+n_coffee = c(9, 0,15,10, 20)
+hometown = c("london", "london","athens","carlisle","london")
+likes_tea = c(TRUE,TRUE,TRUE,TRUE,FALSE)
+class(person_name)
+class(n_coffee)
+class(hometown)
+
+geotable = data.frame(
+  person_name,
+  n_coffee,
+  hometown
+)
