@@ -131,3 +131,7 @@ geotable = data.frame(
   n_coffee,
   hometown
 )
+
+person_name  = c("Humphrey", "James", "Harvinder", "Tom")
+n_coffee =  c(9, 7, 0, 5)
+home_town = c("Worcester",  "Cheltenham", "Hayes", "Luton")
