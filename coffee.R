@@ -128,22 +128,25 @@ coffee_all = rbind(
   coffee_table_df
 )
 
-coordinates = tmaptools::geocode_OSM(coffee_df$hometown)
+# library(tmaptools) # note :: means 'from this package'
+coordinates = tmaptools::geocode_OSM(coffee_all$hometown)
 
-coffee_df = tibble::tibble(
-  person_name,
-  n_coffee,
-  hometown,
+coffee_with_coords = tibble::tibble(
+  person_name = coffee_all$person_name,
+  n_coffee = coffee_all$n_coffee,
+  hometown = coffee_all$hometown,
   lon = coordinates$lon,
   lat = coordinates$lat
 )
 
 library(sf)
 coords = c("lon", "lat")
-coffee_sf = st_as_sf(coffee_df, coords = coords)
+coffee_sf = st_as_sf(coffee_with_coords, coords = coords)
+
+plot(coffee_sf)
 
 library(tmap)
 tmap_mode("view")
-tm_shape(coffee_sf) + tm_dots()
+tm_shape(coffee_sf) + tm_dots() 
 
 write.csv(coffee_df, "coffee.csv")
