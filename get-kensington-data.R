@@ -13,6 +13,7 @@ osm_res = opq(bbox = "london") %>%
 rgs_building = osm_res$osm_polygons
 
 plot(rgs_building)
+mapview::mapview(rgs_building)
 
 # create buffer
 rgs_building_buffer = rgs_building %>% 
@@ -26,9 +27,14 @@ plot(rgs_building$geometry, add = TRUE)
 crashes = get_stats19(year = 2017, type = "ac")
 casualties = get_stats19(year = 2017, type = "ca")
 crashes_joined = dplyr::left_join(crashes, casualties)
-crashes_geo = format_sf(crashes_joined, lonlat = TRUE)
 
-crashes_near_rgs = crashes_geo[rgs_building_buffer, ]
+class(crashes_joined)
+crashes_geo = format_sf(crashes_joined, lonlat = TRUE)
+class(crashes_geo)
+crashes_geo
+
+crashes_near_rgs =
+  crashes_geo[rgs_building_buffer, ]
 nrow(crashes_near_rgs)
 
 table(crashes_near_rgs$casualty_type)
@@ -42,6 +48,8 @@ rf = pct::get_pct_routes_fast(region = "london")
 
 rf_near_rgs = rf[rgs_building_buffer, ]
 rf_near_rgs
+
+plot(rf_near_rgs)
 
 rnet_rgs = stplanr::overline2(rf_near_rgs, "dutch_slc")
 
