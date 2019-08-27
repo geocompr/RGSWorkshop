@@ -1,0 +1,33 @@
+{
+"type": "FeatureCollection",
+"name": "coffee_sf",
+"features": [
+{ "type": "Feature", "properties": { "person_name": "dani", "n_coffee": 10.0, "hometown": "zaragoza" }, "geometry": { "type": "Point", "coordinates": [ -1.16950900924476, 41.84004695 ] } },
+{ "type": "Feature", "properties": { "person_name": "alistair", "n_coffee": 15.0, "hometown": "edinburgh" }, "geometry": { "type": "Point", "coordinates": [ -3.1889908, 55.9521476 ] } },
+{ "type": "Feature", "properties": { "person_name": "robin", "n_coffee": 6.0, "hometown": "hereford" }, "geometry": { "type": "Point", "coordinates": [ -2.7151735, 52.0553813 ] } },
+{ "type": "Feature", "properties": { "person_name": "Elle", "n_coffee": 3.0, "hometown": "London" }, "geometry": { "type": "Point", "coordinates": [ -0.1276474, 51.5073219 ] } },
+{ "type": "Feature", "properties": { "person_name": "Nick", "n_coffee": 9.0, "hometown": "Cumbria" }, "geometry": { "type": "Point", "coordinates": [ -2.9420983366687, 54.6143136 ] } },
+{ "type": "Feature", "properties": { "person_name": "Dan", "n_coffee": 20.0, "hometown": "Kent" }, "geometry": { "type": "Point", "coordinates": [ 0.7105077, 51.2474823 ] } },
+{ "type": "Feature", "properties": { "person_name": "lauren", "n_coffee": 5.0, "hometown": "Twickenham" }, "geometry": { "type": "Point", "coordinates": [ -0.3281887, 51.4467444 ] } },
+{ "type": "Feature", "properties": { "person_name": "Harriet", "n_coffee": 0.0, "hometown": "London" }, "geometry": { "type": "Point", "coordinates": [ -0.1276474, 51.5073219 ] } },
+{ "type": "Feature", "properties": { "person_name": "Tony", "n_coffee": 6.0, "hometown": "Bristol" }, "geometry": { "type": "Point", "coordinates": [ -2.5972985, 51.4538022 ] } },
+{ "type": "Feature", "properties": { "person_name": "James", "n_coffee": 5.0, "hometown": "Walsall" }, "geometry": { "type": "Point", "coordinates": [ -1.9822687, 52.5847949 ] } },
+{ "type": "Feature", "properties": { "person_name": "Monika", "n_coffee": 5.0, "hometown": "Nysa" }, "geometry": { "type": "Point", "coordinates": [ 17.3324733, 50.4738029 ] } },
+{ "type": "Feature", "properties": { "person_name": "Humphrey", "n_coffee": 9.0, "hometown": "Worcester" }, "geometry": { "type": "Point", "coordinates": [ -2.2206585, 52.1911849 ] } },
+{ "type": "Feature", "properties": { "person_name": "James", "n_coffee": 7.0, "hometown": "Cheltenham" }, "geometry": { "type": "Point", "coordinates": [ -2.0711559, 51.8995685 ] } },
+{ "type": "Feature", "properties": { "person_name": "Harvinder", "n_coffee": 0.0, "hometown": "Hayes" }, "geometry": { "type": "Point", "coordinates": [ -118.02287, 34.0742041 ] } },
+{ "type": "Feature", "properties": { "person_name": "Tom", "n_coffee": 5.0, "hometown": "Luton" }, "geometry": { "type": "Point", "coordinates": [ -0.423030407620178, 51.89107295 ] } },
+{ "type": "Feature", "properties": { "person_name": "olivia", "n_coffee": 7.0, "hometown": "doncaster" }, "geometry": { "type": "Point", "coordinates": [ -1.1335312, 53.5227681 ] } },
+{ "type": "Feature", "properties": { "person_name": "daniel", "n_coffee": 3.0, "hometown": "harlech" }, "geometry": { "type": "Point", "coordinates": [ -4.10745, 52.8587665 ] } },
+{ "type": "Feature", "properties": { "person_name": "phil", "n_coffee": 10.0, "hometown": "pretoria" }, "geometry": { "type": "Point", "coordinates": [ 28.1879444, -25.7459374 ] } },
+{ "type": "Feature", "properties": { "person_name": "claudia", "n_coffee": 14.0, "hometown": "mexico_city" }, "geometry": { "type": "Point", "coordinates": [ -100.878123203331, 19.7573995 ] } },
+{ "type": "Feature", "properties": { "person_name": "sam", "n_coffee": 9.0, "hometown": "london" }, "geometry": { "type": "Point", "coordinates": [ -0.1276474, 51.5073219 ] } },
+{ "type": "Feature", "properties": { "person_name": "fazila", "n_coffee": 0.0, "hometown": "london" }, "geometry": { "type": "Point", "coordinates": [ -0.1276474, 51.5073219 ] } },
+{ "type": "Feature", "properties": { "person_name": "george", "n_coffee": 15.0, "hometown": "athens" }, "geometry": { "type": "Point", "coordinates": [ -83.376398, 33.9597677 ] } },
+{ "type": "Feature", "properties": { "person_name": "david", "n_coffee": 10.0, "hometown": "carlisle" }, "geometry": { "type": "Point", "coordinates": [ -2.9362311, 54.8948478 ] } },
+{ "type": "Feature", "properties": { "person_name": "josh", "n_coffee": 20.0, "hometown": "london" }, "geometry": { "type": "Point", "coordinates": [ -0.1276474, 51.5073219 ] } },
+{ "type": "Feature", "properties": { "person_name": "sandra", "n_coffee": 1364.0, "hometown": "Triptis" }, "geometry": { "type": "Point", "coordinates": [ 11.8633794, 50.7353974 ] } },
+{ "type": "Feature", "properties": { "person_name": "Magd", "n_coffee": -533.0, "hometown": "Damascus" }, "geometry": { "type": "Point", "coordinates": [ 36.3095814, 33.5130695 ] } },
+{ "type": "Feature", "properties": { "person_name": "Paul", "n_coffee": 2.0, "hometown": "London" }, "geometry": { "type": "Point", "coordinates": [ -0.1276474, 51.5073219 ] } }
+]
+}
